@@ -56,12 +56,12 @@ int main() {
 
     if (payment >= finalTotal) {
         change = payment - finalTotal;
-        cout << "[SUCCESS] Payment Successful! \n" << endl;
+        cout << "[SUCCESS] Payment Successfull \n" << endl;
         cout << "Change to Return: " << change << " EGP" << endl;
-        cout << "Thank you for shopping with us!" << endl;
+        cout << "Thank you for shopping with us" << endl;
     } else {
         double missingAmount = finalTotal - payment;
-        cout << "[ERROR] Transaction Failed! \n " << endl;
+        cout << "[ERROR] Transaction Failed \n " << endl;
         cout << "Insufficient payment. You still need: " << missingAmount << " EGP" << endl;
     }
 
