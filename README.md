@@ -1,3 +1,24 @@
+# POS Cashier System (C++)
+
+A C++ console application that simulates a Point of Sale (POS) supermarket checkout system. The program handles item pricing, applies conditional discounts, computes sales taxes, and manages customer payment verification.
+
+## Features
+
+- **Automated Subtotal Calculation:** Calculates total costs for 3 input items.
+- **Dynamic Discount System:** Automatically applies a 10% discount when the subtotal exceeds 500 EGP.
+- **Sales Tax Computation:** Applies a 14% VAT after discount application.
+- **Formatted Receipt:** Displays a structured, human-readable receipt in the console.
+- **Payment Validation & Change Calculation:** Verifies customer funds and returns exact change or calculates missing balance.
+
+## Technical Implementation
+
+- **Language:** C++
+- **Concepts Applied:**
+  - Control Flow (`if` / `else` logic)
+  - Mathematical & Logical Operators
+  - Standard I/O (`cin`, `cout`)
+  - Output Formatting (`<iomanip>`, `fixed`, `setprecision`)
+
 ## Example Usage
 
 ```text
@@ -18,14 +39,15 @@ FINAL TOTAL:             615.60 EGP
 -----------------------------------------
 
 Enter Customer Payment: 700
-[SUCCESS] Payment Successful! Change to Return: 84.40 EGP
+[SUCCESS] Payment Successful!
+Change to Return: 84.40 EGP
 Thank you for shopping with us!
 ```
 
 ## How to Run (Windows / GCC)
 
 ```bash
-git clone https://github.com/Mohammed-Etman-CS/Cashier-System-pos.git
+git clone [https://github.com/Mohammed-Etman-CS/Cashier-System-pos.git](https://github.com/Mohammed-Etman-CS/Cashier-System-pos.git)
 cd Cashier-System-pos
 g++ main.cpp -o main
 ./main.exe
